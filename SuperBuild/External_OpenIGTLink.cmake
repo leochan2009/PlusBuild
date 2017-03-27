@@ -41,7 +41,7 @@ ELSE()
     BINARY_DIR "${PLUS_OpenIGTLink_DIR}"
     #--Download step--------------
     GIT_REPOSITORY "${GIT_PROTOCOL}://github.com/openigtlink/OpenIGTLink.git"
-    GIT_TAG "master"
+    GIT_TAG "VideoStreamMerge"
     #--Configure step-------------
     CMAKE_ARGS 
       ${ep_common_args}
@@ -53,6 +53,7 @@ ELSE()
       -DBUILD_TESTING:BOOL=OFF
       -DOpenIGTLink_PROTOCOL_VERSION_2:BOOL=OFF
       -DOpenIGTLink_PROTOCOL_VERSION_3:BOOL=ON
+	  -DBUILD_H264:BOOL=ON
       -DCMAKE_CXX_FLAGS:STRING=${ep_common_cxx_flags}
       -DCMAKE_C_FLAGS:STRING=${ep_common_c_flags}
     #--Build step-----------------
