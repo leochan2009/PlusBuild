@@ -284,7 +284,7 @@ ExternalProject_Add(PlusLib
   SOURCE_DIR "${PLUS_PLUSLIB_DIR}"
   BINARY_DIR "${PLUSLIB_DIR}"
   #--Download step--------------
-  GIT_REPOSITORY "${GIT_PROTOCOL}://github.com/PlusToolkit/PlusLib.git"
+  GIT_REPOSITORY "${GIT_PROTOCOL}://github.com/leochan2009/PlusLib.git"
   GIT_TAG ${PLUSLIB_GIT_REVISION}
   #--Configure step-------------
   CMAKE_ARGS
